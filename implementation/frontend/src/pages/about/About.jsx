@@ -103,12 +103,7 @@ const techCards = [
       "Powering secure, transparent transactions for disaster relief",
     icon: "blockchain",
   },
-  {
-    title: "Grok",
-    subtitle: "AI Assistant",
-    description: "Enhancing aid coordination with intelligent insights",
-    icon: "ai",
-  },
+  
 ];
 
 const Icon = ({ name }) => {
@@ -307,7 +302,7 @@ const About = () => {
           Through the power of blockchain technology and community support,
           we&apos;ve made a real difference in people&apos;s lives.
         </p>
-        <div className="mt-10 grid gap-8 sm:grid-cols-2">
+        <div className="mt-10 flex items-center justify-center">
           {techCards.map((card) => (
             <article
               key={card.title}

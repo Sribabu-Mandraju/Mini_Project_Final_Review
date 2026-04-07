@@ -8,6 +8,6 @@ export const navItems = [
 export const demoUrl = "https://www.youtube.com/";
 
 export const product = {
-  name: "SampadaChain",
+  name: "Karunyasetu",
   tagline: "Institutional DeFi rails for transparent public finance.",
 };
