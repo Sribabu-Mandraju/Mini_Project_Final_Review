@@ -1,0 +1,454 @@
+[
+    {
+        "type": "constructor",
+        "inputs": [
+            {
+                "name": "_details",
+                "type": "tuple",
+                "internalType": "struct ICampaign.CampaignDetails",
+                "components": [
+                    {
+                        "name": "campaignId",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "title",
+                        "type": "string",
+                        "internalType": "string"
+                    },
+                    {
+                        "name": "descriptionURI",
+                        "type": "string",
+                        "internalType": "string"
+                    },
+                    {
+                        "name": "pincodes",
+                        "type": "uint32[]",
+                        "internalType": "uint32[]"
+                    },
+                    {
+                        "name": "state",
+                        "type": "uint8",
+                        "internalType": "enum ICampaign.CampaignState"
+                    }
+                ]
+            },
+            {
+                "name": "_donationPeriod",
+                "type": "uint32",
+                "internalType": "uint32"
+            },
+            {
+                "name": "_registrationPeriod",
+                "type": "uint32",
+                "internalType": "uint32"
+            },
+            {
+                "name": "_waitingPeriod",
+                "type": "uint32",
+                "internalType": "uint32"
+            },
+            {
+                "name": "_distributionPeriod",
+                "type": "uint32",
+                "internalType": "uint32"
+            },
+            {
+                "name": "_donorBadge",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "_anonAadhaarVerifierAddr",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "_usdc",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "stateMutability": "nonpayable"
+    },
+    {
+        "type": "function",
+        "name": "MIN_DONATION",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint32",
+                "internalType": "uint32"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "type": "function",
+        "name": "USDC",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "type": "function",
+        "name": "amountPerVictim",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "type": "function",
+        "name": "anonAadhaarVerifierAddr",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "type": "function",
+        "name": "claimFund",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "nonpayable"
+    },
+    {
+        "type": "function",
+        "name": "distributedFunds",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "type": "function",
+        "name": "donate",
+        "inputs": [
+            {
+                "name": "amount",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable"
+    },
+    {
+        "type": "function",
+        "name": "donorBadge",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "address",
+                "internalType": "contract CampaignDonorBadge"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "type": "function",
+        "name": "getCampaignDetails",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "tuple",
+                "internalType": "struct ICampaign.CampaignDetails",
+                "components": [
+                    {
+                        "name": "campaignId",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "title",
+                        "type": "string",
+                        "internalType": "string"
+                    },
+                    {
+                        "name": "descriptionURI",
+                        "type": "string",
+                        "internalType": "string"
+                    },
+                    {
+                        "name": "pincodes",
+                        "type": "uint32[]",
+                        "internalType": "uint32[]"
+                    },
+                    {
+                        "name": "state",
+                        "type": "uint8",
+                        "internalType": "enum ICampaign.CampaignState"
+                    }
+                ]
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "type": "function",
+        "name": "getCampaignState",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "state",
+                "type": "uint8",
+                "internalType": "enum ICampaign.CampaignState"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "type": "function",
+        "name": "hasWithdrawn",
+        "inputs": [
+            {
+                "name": "",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "type": "function",
+        "name": "isValidPincode",
+        "inputs": [
+            {
+                "name": "",
+                "type": "uint32",
+                "internalType": "uint32"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "type": "function",
+        "name": "registerAsVictim",
+        "inputs": [
+            {
+                "name": "nullifierSeed",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "nullifier",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "timestamp",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "signal",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "revealArray",
+                "type": "uint256[4]",
+                "internalType": "uint256[4]"
+            },
+            {
+                "name": "groth16Proof",
+                "type": "uint256[8]",
+                "internalType": "uint256[8]"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable"
+    },
+    {
+        "type": "function",
+        "name": "totalFunds",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "type": "function",
+        "name": "totalVictims",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "type": "function",
+        "name": "updateState",
+        "inputs": [],
+        "outputs": [],
+        "stateMutability": "nonpayable"
+    },
+    {
+        "type": "function",
+        "name": "victims",
+        "inputs": [
+            {
+                "name": "",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "type": "event",
+        "name": "DonationReceived",
+        "inputs": [
+            {
+                "name": "donor",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "amount",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false
+    },
+    {
+        "type": "event",
+        "name": "FundsDistributed",
+        "inputs": [
+            {
+                "name": "victim",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "amount",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false
+    },
+    {
+        "type": "event",
+        "name": "InsufficientFund",
+        "inputs": [
+            {
+                "name": "balance",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "amountNeeded",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false
+    },
+    {
+        "type": "event",
+        "name": "StateChanged",
+        "inputs": [
+            {
+                "name": "newState",
+                "type": "uint8",
+                "indexed": false,
+                "internalType": "enum ICampaign.CampaignState"
+            }
+        ],
+        "anonymous": false
+    },
+    {
+        "type": "event",
+        "name": "VictimRegistered",
+        "inputs": [
+            {
+                "name": "victim",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            }
+        ],
+        "anonymous": false
+    },
+    {
+        "type": "error",
+        "name": "SafeERC20FailedOperation",
+        "inputs": [
+            {
+                "name": "token",
+                "type": "address",
+                "internalType": "address"
+            }
+        ]
+    }
+]

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(2 6 23);
+  color: rgb(241 245 249);
+}
+
+.starfield {
+  background-image: radial-gradient(
+      2px 2px at 10% 20%,
+      rgba(255, 255, 255, 0.8),
+      transparent
+    ),
+    radial-gradient(
+      1.5px 1.5px at 25% 80%,
+      rgba(255, 255, 255, 0.55),
+      transparent
+    ),
+    radial-gradient(2px 2px at 40% 35%, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(
+      1.5px 1.5px at 58% 62%,
+      rgba(255, 255, 255, 0.5),
+      transparent
+    ),
+    radial-gradient(2px 2px at 72% 18%, rgba(255, 255, 255, 0.75), transparent),
+    radial-gradient(
+      1.5px 1.5px at 84% 74%,
+      rgba(255, 255, 255, 0.6),
+      transparent
+    ),
+    radial-gradient(2px 2px at 93% 44%, rgba(255, 255, 255, 0.75), transparent),
+    linear-gradient(180deg, #020617 0%, #020617 100%);
+}
