@@ -2,6 +2,7 @@
 
 **Authors:** Pradeep Nazerath, Pramod Uppoor, Bhandary Pranith Laxman, Shivamani M Nayak, Shetty Gaurav Jagadeesha
 **Published:** ICIMIA-2025, IEEE
+<https://ieeexplore.ieee.org/document/11200906>
 
 ### Summary
 

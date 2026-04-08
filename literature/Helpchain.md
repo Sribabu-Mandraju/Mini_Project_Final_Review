@@ -2,6 +2,7 @@
 
 **Authors:** Berke Parıldar, Doruk Sayın, Furkan Zeki Türkzeybek, Onur Küçüköz, Yusuf Murat Erten
 **Published:** IISEC 2023, IEEE — Izmir University of Economics, Türkiye
+<https://ieeexplore.ieee.org/document/10391032>
 
 ### Summary
 

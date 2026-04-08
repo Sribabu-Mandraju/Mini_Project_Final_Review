@@ -2,6 +2,7 @@
 
 **Author:** Inayatulloh
 **Published:** ICISS 2025, IEEE — Bina Nusantara University, Jakarta, Indonesia
+<https://ieeexplore.ieee.org/document/11076247>
 
 ### Summary
 

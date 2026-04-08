@@ -2,7 +2,7 @@
 
 **Authors:** Inayatulloh, Betley Heru Susanto, Nadila Setiabudiarto, Wiza Teguh, Erin, Ainun Jariyah
 **Published:** ICEECIT 2024, IEEE — Bina Nusantara University, Jakarta, Indonesia
-
+<https://ieeexplore.ieee.org/document/10860061>
 
 ### Summary
 
