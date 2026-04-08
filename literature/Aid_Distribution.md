@@ -3,6 +3,7 @@
 **Authors:** Inayatulloh, Betley Heru Susanto, Nadila Setiabudiarto, Wiza Teguh, Erin, Ainun Jariyah
 **Published:** ICEECIT 2024, IEEE — Bina Nusantara University, Jakarta, Indonesia
 
+
 ### Summary
 
 This paper addresses a critical problem in Indonesia's disaster relief system: the lack of transparency and accountability in distributing aid to natural disaster victims using conventional, centralized approaches. Donors have no real-time visibility into how funds are allocated, and misuse of relief funds is a recurring concern.
